@@ -1,0 +1,106 @@
+
+
+
+.controls-container {
+  display: none;
+}
+
+
+body {
+  background: rgb(9,121,106);
+  background: linear-gradient(140deg, rgba(9,121,106,1) 27%, rgba(137,6,152,1) 69%, rgba(0,149,255,1) 100%);
+
+width: 800px;
+  height: 1300px;
+
+}
+
+a {
+  color: rgb(255, 0, 191);
+  text-decoration: none;
+  
+}
+.Navagation{
+  background-color: none;
+  border: none;
+  color: rgb(255, 0, 191);
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 1px 1px;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 16;
+    left: 0;
+}
+
+
+.Navagation2{
+  background-color: grey;
+  border: 2px;
+  color: rgb(255, 0, 191);
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 1px 1px;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 16;
+    left: 0;
+}
+
+
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+h1 {
+  color: rgb(255, 0, 191);
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-qdecoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px -1px;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+  }
+  .buttonStart {
+    background-color: rgb(252, 252, 252);
+    border: 3px solid aqua;
+    color: rgb(255, 0, 230);
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 16px 609px;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 16;
+    left: 0;
+  }
+.menubuttons{
+  background-color: rgb(252, 252, 252);
+    border: 3px solid aqua;
+    color: rgb(255, 0, 230);
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 16px 609px;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    width: 16;
+    left: 0;
+}

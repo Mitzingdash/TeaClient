@@ -1,0 +1,22 @@
+body {
+    background: rgb(9,121,106);
+    background: linear-gradient(140deg, rgba(9,121,106,1) 27%, rgba(137,6,152,1) 69%, rgba(0,149,255,1) 100%);
+  
+  width: 800px;
+    height: 1300px;
+  
+  }
+
+  .toggleButton {
+    background-color: white;
+    color: purple;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }

@@ -1,0 +1,21 @@
+{
+  "name": "Teaclient",
+  "productName": "Teaclient",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "school_account",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "minecraft-protocol": "^1.42.0",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "electron": "25.0.1"
+  }
+}
