@@ -1,6 +1,5 @@
 
 
-
 .controls-container {
   display: none;
 }
@@ -9,9 +8,8 @@
 body {
   background: rgb(9,121,106);
   background: linear-gradient(140deg, rgba(9,121,106,1) 27%, rgba(137,6,152,1) 69%, rgba(0,149,255,1) 100%);
-
-width: 800px;
-  height: 1300px;
+  width: 600px;
+  height: 784px;
 
 }
 

@@ -15,14 +15,17 @@ const {Howl, Howler} = require('howler');
 function Createwindow() {
     const win = new BrowserWindow({
         height: config.window.height,
-        title: "TeaClient",
         width: config.window.width,
         maximizable: false,
         titleBarStyle: 'customButtonsOnHover',
+        icon: './Logo.png',
+        icon: __dirname + './Logo (2).icns',
         webPreferences: {
         }
-    })
-    win.loadFile('index.html')
+    });
+    win.loadFile('index.html');
+    win.fullScreenable = false;
+
 }
 
 //-
@@ -65,7 +68,6 @@ app.on('activate' , () => {
 
 app.on('window-all-closed', () => {
     if (process.platform) {
-      audio.stop()
     }
   })
 
