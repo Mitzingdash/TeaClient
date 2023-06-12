@@ -1,0 +1,17 @@
+{
+    "extends": "prettier",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "jsx": true
+    },
+    "plugins": ["prettier"],
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "nax-len": ["error", 178, 4],
+        "prettier/prettier": ["error", {"trailingComma": "es5", "singleQuote": true}]
+    }
+}

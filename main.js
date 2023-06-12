@@ -1,11 +1,10 @@
 // Imports 
-const { BrowserWindow, Menu, app, ipcMain } = require('electron')
+const { BrowserWindow, Menu, app, ipcMain, globalShortcut } = require('electron')
 const path = require('path')
 const process = require('node:process')
 const os = require('os')
-const config = require('./config.json')
+const config = require('./app/config/config.json')
 const nodemon = require('nodemon')
-const {Howl, Howler} = require('howler');
 //-
 
 
@@ -14,29 +13,22 @@ const {Howl, Howler} = require('howler');
 // Window
 function Createwindow() {
     const win = new BrowserWindow({
-        height: config.window.height,
-        width: config.window.width,
+        height: config.window.height, 
+        width: config.window.width, 
         maximizable: false,
         titleBarStyle: 'customButtonsOnHover',
-        icon: './Logo.png',
-        icon: __dirname + './Logo (2).icns',
+        icon: './app/assets/icon/Logo.png',
         webPreferences: {
         }
     });
-    win.loadFile('index.html');
+    win.loadFile('./app/html/index.html');
     win.fullScreenable = false;
 
+    // To enable Developer console mode for launcher Uncomment below
+    //win.openDevTools()
 }
 
-//-
 
-
-
-// Audio 
-
-const sound = new Howl({
-src: ['/Launcher.mp3']
-})
 
 
 
@@ -44,19 +36,9 @@ src: ['/Launcher.mp3']
 
 
 app.whenReady().then(() => {
- sound.on('play')
+console.log('Opening Launcher Now')
   Createwindow()
       })
-
-
-ipcMain.handle('play', (err) => {
-  
-});
-
-
-ipcMain.on('stop', (err) => {
-});
-
 
 
 app.on('activate' , () => {
@@ -68,14 +50,15 @@ app.on('activate' , () => {
 
 app.on('window-all-closed', () => {
     if (process.platform) {
+        console.log('Closing Launcher Now')
+        process.exit()
     }
   })
 
 
 app.on('window-all-closed', () => {
     if (process.platform === 'darwin')
-
+    console.log('Closing Launcher Now')
     app.quit()
-    
   })
 

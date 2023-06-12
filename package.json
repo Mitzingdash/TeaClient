@@ -1,21 +1,12 @@
 {
-  "name": "Teaclient",
-  "productName": "Teaclient",
-  "description": "My Electron application description",
-  "keywords": [],
-  "main": "./main.js",
+  "name": "TeaClient",
   "version": "1.0.0",
-  "author": "school_account",
-  "scripts": {
-    "start": "electron .",
-    "watch": "nodemon --exec electron ."
-  },
+  "description": "A Minecraft client for all",
+  "main": "main.js",
+  "repository": "https://github.com/Mitzingdash/TeaClient.git",
+  "author": "Eveeifyeve <eveeg1971@gmail.com>, Mitzingdash <>",
+  "license": "MIT",
   "dependencies": {
-    "howler": "^2.2.3",
-    "minecraft-protocol": "^1.42.0",
-    "nodemon": "^2.0.22"
-  },
-  "devDependencies": {
-    "electron": "25.0.1"
+    "eslint": "^8.42.0"
   }
 }
