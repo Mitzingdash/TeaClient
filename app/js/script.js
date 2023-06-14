@@ -1,53 +1,16 @@
-const {ipcRenderer} = require('electron');
+const ipc = require('electron').ipcRenderer
 const fs = require('fs');
-const configFile = 'config.js';
-const configContent = fs.readFileSync(configFile, 'utf8');
+const process = require('node:process');
 
-
-
-const setButton = document.getElementById('btn')
-const titleInput = document.getElementById('title')
-setButton.addEventListener('click', () => {
-  const title = titleInput.value
-  window.startApi.setTitle(title)
+document.getElementById('close').addEventListener('click', () => {
+  window.close()
 })
+  
 
 
-
-// Minecraft starting
-const start = document.getElementById('Start')
-start.addEventListener('click', function() {
-const mc = require('minecraft-protocol')
-const client = mc.createClient({
-  host: localhost,
-  port: 25565, 
-  username: '',
-  password: '', 
-  auth: 'microsoft'
-})
-}) 
+// Function
 
 
-
-
-
-
-
-const toggleButton = document.getElementById('toggleButton');
-
-let isPlaying = true;
-
-
-toggleButton.addEventListener('click', () => {
-  if (isPlaying) {
-    ipcRenderer.invoke('stop', err)
-    isPlaying = !isPlaying;
-    
-  } else {
-    ipcRenderer.invoke('stop', err)
-    isPlaying = isPlaying;
-  }
-});
 
 
 
