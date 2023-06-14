@@ -4,9 +4,17 @@
   "description": "A Minecraft client for all",
   "main": "main.js",
   "repository": "https://github.com/Mitzingdash/TeaClient.git",
-  "author": "Eveeifyeve <eveeg1971@gmail.com>, Mitzingdash <>",
+  "author": "Teaclient More info In app/licences/license",
   "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "dist": ""
+  },
   "dependencies": {
-    "eslint": "^8.42.0"
+    "electron": "^25.1.0",
+    "electron-forge": "^5.2.4",
+    "eslint": "^8.42.0",
+    "nodemon": "^2.0.22"
   }
 }
