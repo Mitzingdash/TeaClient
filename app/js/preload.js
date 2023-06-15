@@ -1,14 +1,13 @@
 const {contextBridge, ipcRenderer} = require('electron')
-function start() {
-    ipcRenderer.send('start', err)
-  }
-  
-  contextBridge.exposeInMainWorld('closeApi', () => {
-    ipcRenderer.send('close')
-  })
-    
-  
-  // 
-  // buttons
-  contextBridge.getElementById('start').addEventListener('click', start())
-  
+
+contextBridge.exposeInMainWorld('startMC', ()=>{
+    ipcRenderer.send('Start')
+})
+
+contextBridge.exposeInMainWorld('switchProfile', (name) => {
+  ipcRenderer.send('switchProfile', name);
+});
+
+contextBridge.exposeInMainWorld('login', ()=>{
+  ipcRenderer.send('login')
+})

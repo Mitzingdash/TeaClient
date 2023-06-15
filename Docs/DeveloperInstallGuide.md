@@ -2,16 +2,16 @@
 
 ## ⚠️**Warning! We do not take responsabilty for anything that happens while Installing or Modifcation!**
 
-#
-## Install:
+
+### Install:
 To Install the Repostory Do ▽
 ```bash
 git clone https://github.com/Mitzingdash/TeaClient.git
 ```
 **Before you run the repo there is still three commands you still have to run!**
 ### **⚠️Requires Node!** [Install here](https://nodejs.org/)
-```npm install yarn```
-```del package-lock.json```
+```npm install yarn``` -
+```del package-lock.json``` -
 ```yarn install```
 
 Now you can run the Repostory **Enjoy!**
