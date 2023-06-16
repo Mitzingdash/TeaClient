@@ -3,7 +3,6 @@ const { BrowserWindow, Menu, app, ipcMain, dialog} = require('electron')
 const path = require('path')
 const os = require('os')
 const config = require('./app/config/config.json')
-const forge = require('electron-forge')
 const { spawn } = require('child_process');
 const http = require('http');
 const axios = require('axios');
@@ -54,6 +53,8 @@ const server = http.createServer(async (req, res) => {
         <html>
           <head></head>
           <body>
+          <h1>If you are seeing this, you have failed to login and something has been currupted if you experience this please summit a issue</h1>
+          <h1>
             <script>
                 window.onload = ()=>{window.close()}
             </script>
