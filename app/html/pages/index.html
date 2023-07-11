@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        TeaClient
+    </title>
+    <link rel="stylesheet" href="../../css/frontend/index.css">
+    <script src= "../../js/scripts/script.js"></script>
+</head>
+<body>
+    <div id="introScreen">
+      <img id="introLogo" src="../../assets/icon/Test.png"/>
+    </div>
+    <div id="background"></div>
+ <audio>
+  <source src="../../assets/audio/Launcher.mp3">
+  <source>
+  <source>
+ </audio>
+    <div id="topNavBar">
+      <div id="logoTitle">
+        <img id="topLogo" src="../../assets/icon/Test.png" />
+        <h1 class="title">Tea Client</h1>
+      </div>
+  
+      <div id="navBarItems">
+        <a href="#" class="Navagation initial" goto="">Home</a>
+        <a href="#" class="Navagation" goto="./settings.html" src="../js/settings.js">Settings</a>
+        <a href="#" class="Navagation" goto="./about.html">About</a>
+        <a href="#" class="Navagation" goto="./news.html">News</a>
+        <a href="#" class="Navagation" goto="./mods.html">Mods</a> <!-- IN works hoorway --> 
+        <a href="#" class="Navagation" goto="./profile.html">Profile</a> <!--This is temperary for the profile page-->
+      </div>
+      <div id="rightContainer">
+        <div>
+          <img src="https://visage.surgeplay.com/face/fad68f7e545d4eeaa09e9a8aa3c081f6" id="userProfileHead"/>
+          <div id="profilePopup">
+            <a class="profile" id="addProfile" goto="./profile.html">Add Account</a>
+          </div>
+        </div>
+        <div id="close">X</div>
+      </div>
+    </div>
+
+    <iframe src="" id="contentIframe"></iframe>
+
+    <div id="bottomNavBar">
+      <button class="buttonStart" id="Start">Launch</button>
+      <input type="button" class="musicbutton" value="">
+    </div>
+  </body>
+</html>

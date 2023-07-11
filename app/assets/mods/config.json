@@ -1,0 +1,41 @@
+{
+    "modrinth": {
+
+      "Authization": "",
+      "Content-type": "",
+      "User-agent": "",
+
+      "ModNames": {
+
+      },
+      "ModIds": {
+
+      }
+
+
+    }, 
+    
+    "Mods": {
+        "SkyblockAddons": {
+            "Icon": "", 
+            "DonationURl": "",
+            "FilePath": "",
+            "Licence": "",
+            "DiscordRPC": "False"
+        },
+
+        "NotEnoughUpdates": {
+            "Icon": "",
+            "DonationURL": "",
+            "Filepath": "", 
+            "Licence": ""
+        }
+
+
+
+
+
+    }
+
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        TeaClient
+    </title>
+    <link rel="stylesheet" href="../../css/frontend/settings.css">
+</head>
+<body>
+    <div id="container"> 
+        <div id="titles">
+            <a id="title">CLIENT SETTINGS</a><br>
+            <a id="subtitle">Memory Allocation & Launcher Prefrences</a>
+        </div>
+        
+        <div id="container2">
+            <div class="subcontainer">
+                <a class='settingTitle'>Resolution</a><br>
+                <a class='settingDesc'>The resolution to launch your game in</a><br><br><br>
+                <label class="resolutionLabel">Width</label><label class="resolutionLabel">Height</label><br>
+                <input type="text" placeholder="1920" class='resolutionInput' id='resWidth'> X <input type="text" placeholder="1080" class='resolutionInput' id='resHeight'>
+            </div>
+            <div class="subcontainer">
+                <a class='settingTitle'>Minecraft Directory</a><br>
+                <a class='settingDesc'>Select directory to launch Minecraft from</a><br><br>
+                <input type="text" value="C:\Users\jedij\AppData\Roaming\.minecraft" disabled id='minecraftDirectory'><br><br>
+                <button id="changeDirectory">Change Directory</button>
+            </div>
+            <div class="subcontainer">
+                <a class='settingTitle'>Keep launcher open</a><br>
+                <a class='settingDesc'>Choose whether to keep the launcher open after opening Minecraft</a><br>
+                <label class="switch">
+                    <input type="checkbox" id="keepLauncherOpen">
+                    <span class="slider2"></span>
+                </label>
+            </div>
+            <div class="subcontainer">
+                <a class='settingTitle'>Allocated Memory</a><br>
+                <a class='settingDesc'>Amount of dedicated memory for the game</a>
+                <input type="range" min="4" max="64" value="4" class="slider" id="ram">
+                <p id="allocatedMemory">4Gb Allocated</p>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/scripts/page/settings.js">
+    </script>
+</body>
+</html>

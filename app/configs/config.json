@@ -1,0 +1,8 @@
+{
+    "window": {
+        "height" : 800,
+        "width": 1300
+    },
+    "music": true,
+    "debug": true
+}
